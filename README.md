@@ -15,7 +15,7 @@ This component will display the title and the length of the selected song.
 
 #2. **Action** : The action object relates exactly how to change data inside of the application.
 
-*The action object gets fed to...* 
+*The action object gets fed to...*
 
 #3. **Dispatch** : The dispatch function gets the action object and feeds those information to each of the different reducers.
 
@@ -27,3 +27,4 @@ This component will display the title and the length of the selected song.
 
 *Then we WAIT until we need to update the state again*
 
+![alt text](public/redux-layout.png)
