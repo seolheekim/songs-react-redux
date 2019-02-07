@@ -1,68 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Break Down
+There will be two components SongList and SongDetail.
 
-## Available Scripts
+#1. SongList
+This component will take a list of songs in an array of objects.
+Each object has 'title of the song' and 'length of the song'
 
-In the project directory, you can run:
+#2. SongDetail
+If it is given a song object it will display the title and the length of the selected song.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+REDUX CYCLE
+#1. Action Creator : anytime to make change in the state or the data in the application. Action creator is called.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+*** Calling the 'action creator' will produce an 'action' object ***
 
-### `npm test`
+#2. Action : The action object relates exactly how to change data inside of the application.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*** The action object gets fed to... ***
 
-### `npm run build`
+#3. Dispatch : The dispatch function gets the action object and feeds those information to each of the different reducers.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*** So Dispatch forwards the action to reducers ***
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+#4. Reducers : It will process those actions that came in and modify the data and then eventually return some new data.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#5. State : The data that gets returned gets formed into some new state object.
 
-### `npm run eject`
+*** Then we WAIT until we need to update the state again ***
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
