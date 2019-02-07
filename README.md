@@ -1,5 +1,6 @@
 ## BREAK DOWN ##
 There will be two components **SongList** and **SongDetail**.
+Create static unchanging list of songs into the reducers.
 
 ### 1. SongList ###
 This component will take a list of songs in an array of objects. Each object has *'title of the song'* and *'length of the song'*
