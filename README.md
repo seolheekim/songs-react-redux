@@ -28,4 +28,3 @@ REDUX CYCLE
 
 *** Then we WAIT until we need to update the state again ***
 
-![alt text](public/redux-layout.png)
