@@ -1,4 +1,4 @@
-## Break Down ##
+## BREAK DOWN ##
 There will be two components **SongList** and **SongDetail**.
 
 ### 1. SongList ###
@@ -7,6 +7,7 @@ This component will take a list of songs in an array of objects. Each object has
 ### 2. SongDetail ###
 This component will display the title and the length of the selected song.
 
+![alt text](public/redux-layout.png)
 
 ## REDUX CYCLE ##
 #1. **Action Creator** : anytime to make change in the state or the data in the application. Action creator is called.
@@ -27,4 +28,4 @@ This component will display the title and the length of the selected song.
 
 *Then we WAIT until we need to update the state again*
 
-![alt text](public/redux-layout.png)
+
