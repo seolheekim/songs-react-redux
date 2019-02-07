@@ -2,7 +2,7 @@
 There will be two components **SongList** and **SongDetail**.
 
 ### 1. SongList ###
-This component will take a list of songs in an array of objects. Each object has 'title of the song' and 'length of the song'
+This component will take a list of songs in an array of objects. Each object has *'title of the song'* and *'length of the song'*
 
 ### 2. SongDetail ###
 If it is given a song object it will display the title and the length of the selected song.
