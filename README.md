@@ -5,7 +5,7 @@ There will be two components **SongList** and **SongDetail**.
 This component will take a list of songs in an array of objects. Each object has *'title of the song'* and *'length of the song'*
 
 ### 2. SongDetail ###
-If it is given a song object it will display the title and the length of the selected song.
+This component will display the title and the length of the selected song.
 
 
 ## REDUX CYCLE ##
