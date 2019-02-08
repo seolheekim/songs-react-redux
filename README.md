@@ -1,14 +1,4 @@
-## BREAK DOWN ##
-There will be two components **SongList** and **SongDetail**.
-Create static unchanging list of songs into the reducers.
-
-### 1. SongList ###
-This component will take a list of songs in an array of objects. Each object has *'title of the song'* and *'length of the song'*
-
-### 2. SongDetail ###
-This component will display the title and the length of the selected song.
-
-![alt text](public/redux-layout.png)
+![alt text](public/screenshot_01.png)
 
 ## REDUX CYCLE ##
 #1. **Action Creator** : anytime to make change in the state or the data in the application. Action creator is called.
