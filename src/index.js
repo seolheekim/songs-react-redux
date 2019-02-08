@@ -1,5 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+// This is a component made by react-redux library.
+// By convention we need to label component variable names as
+// capitals.
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+import App from './components/App';
+import reducers from './reducers';
+
+
+ReactDOM.render(
+  <Provider store={createStore(reducers)}>
+    <App />
+  </Provider>,
+  document.querySelector('#root')
+);
